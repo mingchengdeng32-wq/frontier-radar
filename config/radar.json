@@ -1,0 +1,23 @@
+{
+  "name": "前沿雷达",
+  "timezone": "Asia/Shanghai",
+  "schedule": "CRON_TZ=Asia/Shanghai 30 9 * * *",
+  "html_artifact_url": "https://claude.ai/artifact/Dbtgqj57r7S5R2rfGT9HCm",
+  "scheduled_task_id": "trig_015ECRAbT7Re6qw9beShScoY",
+  "claude_doc": {
+    "title": "前沿雷达 · 每日学习",
+    "project_id": "815d4336-4a98-4945-88c3-18fe1fd19fd6",
+    "url": "https://claude.ai/code/artifact/815d4336-4a98-4945-88c3-18fe1fd19fd6",
+    "tabs": {
+      "overview": "7c3109d4-88fe",
+      "claims_tracker": "e1dbd6aa-7575",
+      "daily_parent": "2239dfa0-4224"
+    },
+    "claims_status_enum": {
+      "id": "50108ab7-4aaf",
+      "values": ["待验证", "跟踪中", "已兑现", "未兑现", "已证伪"]
+    }
+  },
+  "latest_issue": { "number": 6, "date": "2026-10-10", "file": "issues/2026-10-10-issue-006.html" },
+  "_note": "Claude 的 artifact、文档和定时任务都绑定在原账号下。换账号或换环境时，按 README 的「迁移」一节重建，然后更新这里的 ID。"
+}
