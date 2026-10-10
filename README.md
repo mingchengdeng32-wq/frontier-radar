@@ -16,8 +16,7 @@ skills/frontier-radar/       可在任意 Claude 环境中复用的 skill
 docs/writing-standard.md     写作标准，以 Muse 精读为样板，含读者反馈形成的规则
 docs/sources.md              信息源、发现路径、踩过的坑
 docs/design-system.md        版式组件与禁用样式
-template/radar-template.html 版式模板（即最新一期）
-issues/                      往期 HTML 存档
+issues/                      往期 HTML 存档（最新一期即版式模板）
 scripts/check_page.py        发布前检查：截图、移动端横向溢出
 config/radar.json            线上资源 ID：页面链接、学习文档、定时任务
 ```
@@ -38,4 +37,4 @@ config/radar.json            线上资源 ID：页面链接、学习文档、定
 
 ## 维护约定
 - 每次调整写法或版式时，同步更新 `docs/` 和 `prompts/daily-task.md`，并在线上任务中粘贴同样的内容。
-- 每期发布后，把 HTML 存到 `issues/`，并覆盖 `template/radar-template.html`。
+- 每期发布后，把 HTML 存到 `issues/`，它同时作为下一期的版式模板。

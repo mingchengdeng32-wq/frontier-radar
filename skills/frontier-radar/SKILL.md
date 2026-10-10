@@ -17,18 +17,18 @@ description: 制作「前沿雷达」每日 AI 前沿日报（一手访谈精读
 1. `docs/writing-standard.md`：写作标准和铁律，最重要。
 2. `docs/sources.md`：信息源、发现路径，以及踩过的坑。
 3. `docs/design-system.md`：版式组件和禁用的样式。
-4. `template/radar-template.html`：上一期页面，作为版式模板。
+4. `issues/` 中日期最新的一期：版式模板。
 
 ## 流程
 1. **确认日期**：用北京时间确认今天的日期。只收过去约 48 小时内发生或发布的事。
 2. **找一手材料**：按 `docs/sources.md` 去查 Teahose 的节目页，再到 ceointerviews.ai 找逐字稿。尽量通读全文。
 3. **找今日信号**：查官方博客、主流媒体，以及日更汇总。日更汇总里的条目都要打开原文核实。
 4. **写作**：按写作标准写每篇精读，包括标题、一句话总结、十个要点、雷达观察、深挖五步、分读者的启发、注；再写信号深挖、快讯和论断表。顶部加一条「今日主线」。
-5. **排版**：复制模板，只替换内容，不改 CSS。多篇精读时，用 `.part` 区分 A1、A2……
+5. **排版**：复制最新一期，只替换内容，不改 CSS。多篇精读时，用 `.part` 区分 A1、A2……
 6. **检查**：运行 `python3 scripts/check_page.py <html>`，确认 390px 宽度下没有横向滚动，并看一眼截图。
 7. **发布**：
    - Claude 环境：用 Artifact 工具发布。已有固定链接时，先 read 再 publish 到同一个 url（见 `config/radar.json`）。
-   - 其他环境：把文件存到 `issues/<日期>-issue-<期号>.html`，并更新 `template/radar-template.html`。
+   - 其他环境：把文件存到 `issues/<日期>-issue-<期号>.html`。
 8. **归档**（可选）：Claude Docs 学习文档的各个 ID 见 `config/radar.json`。
 9. **提交**：`git add -A && git commit -m "issue <期号> <日期>" && git push`。
 
